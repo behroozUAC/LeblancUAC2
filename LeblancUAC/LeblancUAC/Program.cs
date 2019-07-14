@@ -152,23 +152,7 @@ namespace LeblancUAC
         }
         private static void Drawing_OnDraw(EventArgs args)
         {
-            string temp = "";
-            foreach (var buff in Player.Buffs)
-            {
-                temp += (buff.Name + "(" + buff.Count + ")" + ", ");
-            }
-
-            SpellDataInstClient spellQ = Player.Spellbook.GetSpell(SpellSlot.Q);
-            SpellDataInstClient spellW = Player.Spellbook.GetSpell(SpellSlot.W);
-            SpellDataInstClient spellE = Player.Spellbook.GetSpell(SpellSlot.E);
-            SpellDataInstClient spellR = Player.Spellbook.GetSpell(SpellSlot.R);
-
-            //Drawing.DrawText(120, 370, Color.Yellow, "Buffs : " + temp.ToString());
-            //Drawing.DrawText(120,350, Color.Yellow,  "spell Q : " + spellQ.Name.ToString());
-            //Drawing.DrawText(120, 340, Color.Yellow, "spell W : " + spellW.Name.ToString());
-            //Drawing.DrawText(120, 330, Color.Yellow, "spell E : " + spellE.Name.ToString());
-            //Drawing.DrawText(120, 320, Color.Yellow, "spell R : " + spellR.Name.ToString());
-
+            
             
             if (MainMenu["isDead"].GetValue<MenuBool>().Enabled)
             {
