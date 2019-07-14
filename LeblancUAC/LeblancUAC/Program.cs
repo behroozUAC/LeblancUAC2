@@ -30,10 +30,10 @@ namespace LeblancUAC
 
         private static void GameEvent_OnGameLoad()
         {
-            //if (ObjectManager.Player.CharacterName != "Leblanc")
-            //{
-            //    return;
-            //}
+            if (ObjectManager.Player.CharacterName != "Leblanc")
+            {
+                return;
+            }
 
 
 
